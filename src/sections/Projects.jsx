@@ -34,7 +34,7 @@ const projects = [
     title: "EduChoice",
 
     description:
-      "Modern school platform built with React JS and bilingual support system for students and schools.",
+      "EduChoice is a full-stack bilingual platform that helps parents in Jordan discover, compare, and apply to schools through one centralized system.The platform simplifies school selection by providing organized school information, smart filtering, and dedicated dashboards for both parents and schools.",
 
     image: choice,
 
@@ -50,7 +50,7 @@ const projects = [
     title: "rooh travel ",
 
     description:
-      "Analytics dashboard with charts, reports and responsive admin management interface.",
+      "Rooh Travel is a modern travel booking platform designed to help users explore destinations, plan trips, and manage travel experiences through a clean and user-friendly interface.The platform offers responsive design, smooth navigation, and interactive features that provide an enjoyable and seamless travel experience.",
 
     image: wwww,
 
@@ -72,7 +72,7 @@ const projects = [
     title: "App_Salford",
 
     description:
-      "Modern delivery application UI with clean mobile-first experience and elegant user interface.",
+      "SALFORD is a modern e-learning mobile application built with React Native that helps users explore IT courses such as programming, cybersecurity, and UI/UX design.The app delivers a smooth learning experience with secure authentication, interactive course browsing, and a clean modern interface.",
 
     image: app,
 
@@ -90,7 +90,7 @@ const projects = [
     title: "Portfolio Website",
 
     description:
-      "Minimal and modern portfolio website with smooth animations and responsive design.",
+      "A modern personal portfolio website built with React and Tailwind CSS to showcase projects, skills, and professional experience through a clean and responsive design.The portfolio features smooth animations, interactive UI elements, and a fully responsive layout optimized for all devices.",
 
     image: pro1,
 
