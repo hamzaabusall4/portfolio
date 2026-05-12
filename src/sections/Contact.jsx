@@ -70,86 +70,235 @@ function Contact() {
 
             {/* EMAIL */}
 
-            <div>
 
-              <p className="text-zinc-500 text-xs uppercase tracking-[4px] mb-3">
-                Email
-              </p>
 
-              <a
-                href="mailto:Hamzaabusall4@gmail.com"
-                className="text-xl font-semibold break-all hover:text-zinc-300 transition"
-              >
-                Hamzaabusall4@gmail.com
-              </a>
 
-            </div>
 
-            {/* LOCATION */}
+        <div
+  className="
+    mt-11
+    relative
+    overflow-hidden
+    rounded-[0px]
+    border border-zinc-800
+    bg-zinc-950/60
+    backdrop-blur-2xl
+    p-8 sm:p-10 md:p-14
+  "
+>
 
-            <div>
+  {/* TOP GRADIENT */}
 
-              <p className="text-zinc-500 text-xs uppercase tracking-[4px] mb-3">
-                Location
-              </p>
+  <div
+    className="
+      absolute top-0 left-0
+      w-full h-px
+      bg-gradient-to-r from-transparent via-white/130 to-transparent
+    "
+  />
 
-              <h3 className="text-xl font-semibold">
-                Amman, Jordan
-              </h3>
+  {/* CONTENT */}
 
-            </div>
+  <div className="flex flex-col gap-7">
 
-            {/* SOCIALS */}
+    {/* EMAIL */}
 
-            <div>
+    <div
+      className="
+        flex flex-col
+        gap-3
+        pb-10
+        border-b border-zinc-200
+      "
+    >
 
-              <p className="text-zinc-500 text-xs uppercase tracking-[4px] mb-5">
-                Socials
-              </p>
+      <span
+        className="
+          text-zinc-500
+          text-[30px]
+          uppercase
+          tracking-[9px]
+        "
+      >
+        Email
+      </span>
 
-              <div className="flex gap-4">
+      <a
+        href="mailto:Hamzaabusall4@gmail.com"
+        className="
+          text-2xl sm:text-3xl
+          font-bold
+          text-white
+          tracking-tight
+          hover:text-zinc-300
+          transition duration-300
+        "
+      >
+        Hamzaabusall4@gmail.com
+      </a>
 
-                <a
-                  href="https://github.com/hamzaabusall4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
-                >
-                  <FaGithub size={20} />
-                </a>
+    </div>
 
-                <a
-                  href="https://www.linkedin.com/in/hamza-abu-sall-aab114235"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
-                >
-                  <FaLinkedin size={20} />
-                </a>
+    {/* LOCATION */}
 
-                <a
-                  href="https://www.instagram.com/hamza.abusall3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
-                >
-                  <FaInstagram size={20} />
-                </a>
+    <div
+      className="
+        flex flex-col
+        gap-3
+        pb-10
+        border-b border-zinc-200
+      "
+    >
 
-                 <a
-                  href="mailto:Hamzaabusall4@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
-                >
-                  <FaEnvelope  size={20} />
-                </a>
+      <span
+        className="
+           text-zinc-500
+          text-[30px]
+          uppercase
+          tracking-[9px]
+        "
+      >
+        Location
+      </span>
 
-              </div>
+      <h3
+        className="
+          text-2xl sm:text-3xl
+          font-bold
+          text-white
+          tracking-tight
+        "
+      >
+        Amman / Jordan
+      </h3>
 
-            </div>
+    </div>
+
+    {/* SOCIALS */}
+
+    <div className="flex flex-col gap-6">
+
+      <span
+        className="
+           text-zinc-500
+          text-[30px]
+          uppercase
+          tracking-[9px]
+        "
+      >
+        Socials
+      </span>
+
+      <div className="flex flex-wrap gap-40">
+
+        <a
+          href="https://github.com/hamzaabusall4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            group
+            w-16 h-16
+            rounded-2xl
+            border border-zinc-800
+            bg-black/20
+            backdrop-blur-xl
+            flex items-center justify-center
+            text-zinc-400
+            hover:bg-white
+            hover:text-black
+            hover:border-white
+            transition-all duration-300
+          "
+        >
+          <FaGithub
+            size={22}
+            className="group-hover:scale-110 transition duration-300"
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hamza-abu-sall-aab114235"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            group
+            w-16 h-16
+            rounded-2xl
+            border border-zinc-800
+            bg-black/20
+            backdrop-blur-xl
+            flex items-center justify-center
+            text-zinc-400
+            hover:bg-white
+            hover:text-black
+            hover:border-white
+            transition-all duration-300
+          "
+        >
+          <FaLinkedin
+            size={22}
+            className="group-hover:scale-110 transition duration-300"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/hamza.abusall3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            group
+            w-16 h-16
+            rounded-2xl
+            border border-zinc-800
+            bg-black/20
+            backdrop-blur-xl
+            flex items-center justify-center
+            text-zinc-400
+            hover:bg-white
+            hover:text-black
+            hover:border-white
+            transition-all duration-300
+          "
+        >
+          <FaInstagram
+            size={22}
+            className="group-hover:scale-110 transition duration-300"
+          />
+        </a>
+
+        <a
+          href="mailto:Hamzaabusall4@gmail.com"
+          className="
+            group
+            w-16 h-16
+            rounded-2xl
+            border border-zinc-800
+            bg-black/20
+            backdrop-blur-xl
+            flex items-center justify-center
+            text-zinc-400
+            hover:bg-white
+            hover:text-black
+            hover:border-white
+            transition-all duration-300
+          "
+        >
+          <FaEnvelope
+            size={22}
+            className="group-hover:scale-110 transition duration-300"
+          />
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
           </div>
+          
 
           {/* RIGHT FORM */}
 

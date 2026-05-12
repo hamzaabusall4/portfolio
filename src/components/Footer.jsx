@@ -9,21 +9,21 @@ import {
 function Footer() {
   return (
 
-    <footer className="border-t border-zinc-900 bg-black py-14">
-
+    <footer className="border-t border-b border-zinc-800 bg-black/66 py-14 ">
+{/* fixed top-0 left-0 w-full z-50 border-b border-zinc-800 bg-black/70 backdrop-blur-xl */}
       <div className="container">
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
 
           {/* LEFT */}
 
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left gap-4" >
 
-            <h2 className="text-3xl font-black tracking-tight mb-3">
+            <h2 className="text-5xl font-black tracking-tight mb-3 gap-7">
               Hamza Abusal
             </h2>
 
-            <p className="text-zinc-500 leading-7 text-[15px] max-w-md">
+            <p className="text-zinc-500 leading-7 text-[15px] max-w-md gap-8">
               Frontend Developer building modern,
               responsive and user-focused web experiences.
             </p>
