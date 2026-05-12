@@ -189,7 +189,7 @@ function Contact() {
         Socials
       </span>
 
-      <div className="flex flex-wrap gap-9">
+      <div className="flex flex-wrap gap-6">
 
         <a
           href="https://github.com/hamzaabusall4"
