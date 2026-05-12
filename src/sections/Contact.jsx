@@ -1,7 +1,8 @@
 import {
   FaGithub,
   FaLinkedin,
-  FaInstagram
+  FaInstagram,
+  FaEnvelope 
 } from "react-icons/fa";
 
 function Contact() {
@@ -133,6 +134,15 @@ function Contact() {
                   className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
                 >
                   <FaInstagram size={20} />
+                </a>
+
+                 <a
+                  href="mailto:Hamzaabusall4@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
+                >
+                  <FaEnvelope  size={20} />
                 </a>
 
               </div>
