@@ -16,19 +16,15 @@ import school3 from "../assets/school3.png";
 import school4 from "../assets/school4.png";
 
 
-
-import pro1 from "../assets/pro1.png";
-import pro2 from "../assets/pro2.png";
-import pro3 from "../assets/pro3.png";
-import pro4 from "../assets/pro4.png";
-
+import pro1 from "../assets/pro1.PNG";
+import pro2 from "../assets/pro2.PNG";
+import pro3 from "../assets/pro3.PNG";
+import pro4 from "../assets/pro4.PNG";
 
 
-
-import wwww from "../assets/wwww.png";
-import wwswsws from "../assets/wwswsws.png";
-import sxsxs from "../assets/sxsxs.png";
-
+import wwww from "../assets/wwww.PNG";
+import wwswsws from "../assets/wwswsws.PNG";
+import sxsxs from "../assets/sxsxs.PNG";
 
 
 
