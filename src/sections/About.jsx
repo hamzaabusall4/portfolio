@@ -45,7 +45,7 @@ function About() {
               </h3>
 
               <p className="text-zinc-500 text-sm">
-                Years Experience
+                 Experience
               </p>
 
             </div>

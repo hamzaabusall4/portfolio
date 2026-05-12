@@ -210,113 +210,105 @@ function Projects() {
         </div>
       </section>
 
-      {/* MODAL */}
 
-      {selectedProject && (
 
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-5">
 
-          <div className="bg-zinc-950 border border-zinc-800 w-full max-w-6xl max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative">
 
-            {/* CLOSE */}
+   {/* MODAL */}
 
-            <button
-              onClick={closeProject}
-              className="absolute top-6 right-6 z-50 w-12 h-12 rounded-full bg-black/70 border border-zinc-700 text-xl hover:border-white transition"
-            >
-              ✕
-            </button>
+{selectedProject && (
 
-            {/* IMAGE */}
+  <div
+    className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-6"
+    onClick={closeProject}
+  >
 
-            <div className="relative">
+    <div
+      onClick={(e) => e.stopPropagation()}
+          className="bg-[#0a0a0a] border border-zinc-800 w-full max-w-3xl max-h-[80vh] overflow-y-auto rounded-[32px] shadow-2xl relative"
+    >
 
-              <img
-                src={selectedProject.images[currentImage]}
-                alt=""
-                className="w-full h-[550px] object-cover"
-              />
+      {/* CLOSE BUTTON */}
 
-              {/* LEFT */}
+      <button
+        onClick={closeProject}
+        className="absolute top-6 right-6 z-50 w-12 h-12 bg-black/60 backdrop-blur-xl text-white text-xl flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+      >
+        ✕
+      </button>
 
-              <button
-                onClick={prevImage}
-                className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-black/70 border border-zinc-700 text-2xl hover:border-white transition"
-              >
-                ←
-              </button>
+      {/* IMAGE SECTION */}
 
-              {/* RIGHT */}
+      <div className="relative overflow-hidden rounded-t-[32px]">
 
-              <button
-                onClick={nextImage}
-                className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-black/70 border border-zinc-700 text-2xl hover:border-white transition"
-              >
-                →
-              </button>
+        <img
+          src={selectedProject.images[currentImage]}
+          alt=""
+          className="w-full object-cover"
+        />
 
-            </div>
+        {/* OVERLAY */}
 
-            {/* CONTENT */}
+        <div className="absolute inset-0 bg-black/35"></div>
 
-            <div className="p-12 md:p-14">
+        {/* LEFT BUTTON */}
 
-              <h3 className="text-4xl md:text-5xl font-black tracking-tight mb-8">
-                {selectedProject.title}
-              </h3>
+        <button
+          onClick={prevImage}
+          className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-black/50 backdrop-blur-xl text-white text-2xl flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+        >
+          ←
+        </button>
 
-              <p className="text-zinc-400 text-lg leading-9 max-w-4xl mb-12">
-                {selectedProject.description}
-              </p>
+        {/* RIGHT BUTTON */}
 
-              {/* TECH */}
+        <button
+          onClick={nextImage}
+          className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-black/50 backdrop-blur-xl text-white text-2xl flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+        >
+          →
+        </button>
 
-              <div className="flex flex-wrap gap-4 mb-14">
+        {/* IMAGE COUNT */}
 
-                {selectedProject.tech.map((item, i) => (
+        <div className="absolute bottom-6 right-6 bg-black/60 backdrop-blur-xl px-4 py-2 text-sm text-zinc-300">
+          {currentImage + 1} / {selectedProject.images.length}
+        </div>
 
-                  <span
-                    key={i}
-                    className="border border-zinc-700 px-5 py-3 rounded-full text-sm text-zinc-300"
-                  >
-                    {item}
-                  </span>
+      </div>
 
-                ))}
+      {/* CONTENT */}
 
-              </div>
+      <div className="p-10 md:p-14">
 
-              {/* BUTTONS */}
+        <h3 className="text-4xl md:text-5xl font-black tracking-tight mb-6">
+          {selectedProject.title}
+        </h3>
 
-              <div className="flex flex-wrap gap-5">
+        <p className="text-zinc-400 text-lg leading-9 max-w-4xl mb-10">
+          {selectedProject.description}
+        </p>
 
-                <a
-                  href={selectedProject.live}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-white text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300"
-                >
-                  Live Demo
-                </a>
+        <div className="flex flex-wrap gap-5">
 
-                <a
-                  href={selectedProject.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="border border-zinc-700 px-8 py-4 rounded-full font-semibold hover:border-white hover:bg-white hover:text-black transition duration-300"
-                >
-                  Source Code
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
+          <a
+            href={selectedProject.github}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex translate-x-4 px-8 py-4 border border-zinc-700 text-white hover:bg-white hover:text-black hover:border-white transition duration-300"
+          >
+            Source Code
+          </a>
 
         </div>
 
-      )}
+      </div>
+
+    </div>
+
+  </div>
+
+)}
     </>
   );
 }
