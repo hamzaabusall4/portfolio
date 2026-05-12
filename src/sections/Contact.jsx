@@ -234,7 +234,7 @@ function Contact() {
                 type="submit"
                 className="bg-white text-black px-8 py-4 font-semibold hover:bg-zinc-200 transition duration-300"
               >
-                Send Message
+                Send Email
               </button>
 
             </form>

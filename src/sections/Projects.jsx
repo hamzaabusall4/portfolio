@@ -40,7 +40,7 @@ const projects = [
 
     images: [ choice,home2, school,school2, school3, school4 ],
 
-    tech: ["React", "JavaScript", "Tailwind"],
+    tech: [""],
 
     github: "https://github.com/hamzaabusall4/my-projects",
   },
@@ -56,7 +56,7 @@ const projects = [
 
     images: [ wwww,wwswsws,sxsxs ],
 
-    tech: ["React", "Chart.js", "Tailwind"],
+    tech: [""],
 
     
 
@@ -78,7 +78,7 @@ const projects = [
 
     images: [app, start, login, home, profile],
 
-    tech: ["React", "JavaScript", "CSS"],
+    tech: [""],
 
    github: "https://github.com/hamzaabusall4/my-projects",
   },
@@ -96,7 +96,7 @@ const projects = [
 
     images: [pro1, pro2, pro3,pro4],
 
-    tech: ["React", "CSS", "Tailwind"],
+    tech: [""],
 
   
 
@@ -214,64 +214,138 @@ function Projects() {
 
 
 
-   {/* MODAL */}
+
+
+
+
+
+
+{/* MODAL */}
 
 {selectedProject && (
 
   <div
-    className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-6"
+    className="
+      fixed inset-0 z-50
+      bg-black/80 backdrop-blur-md
+      flex items-center justify-center
+      p-4
+    "
     onClick={closeProject}
   >
 
+    {/* CONTAINER */}
+
     <div
       onClick={(e) => e.stopPropagation()}
-          className="bg-[#0a0a0a] border border-zinc-800 w-full max-w-3xl max-h-[80vh] overflow-y-auto rounded-[32px] shadow-2xl relative"
+      className="
+        relative
+        w-full
+        max-w-5xl
+        bg-[#0b0b0b]
+        border border-zinc-800
+        rounded-[30px]
+        overflow-hidden
+        shadow-[0_0_60px_rgba(0,0,0,0.6)]
+        animate-in fade-in zoom-in duration-300
+      "
     >
 
       {/* CLOSE BUTTON */}
 
       <button
         onClick={closeProject}
-        className="absolute top-6 right-6 z-50 w-12 h-12 bg-black/60 backdrop-blur-xl text-white text-xl flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+        className="
+          absolute top-5 right-5 z-50
+          w-11 h-11
+          rounded-full
+          bg-black/60
+          backdrop-blur-xl
+          border border-zinc-700
+          text-white
+          flex items-center justify-center
+          hover:bg-white hover:text-black
+          transition duration-300
+        "
       >
         ✕
       </button>
 
-      {/* IMAGE SECTION */}
+      {/* IMAGE AREA */}
 
-      <div className="relative overflow-hidden rounded-t-[32px]">
+      <div className="relative bg-black">
 
         <img
           src={selectedProject.images[currentImage]}
           alt=""
-          className="w-full object-cover"
+          className="
+            w-full
+            h-[260px]
+            sm:h-[420px]
+            md:h-[520px]
+            object-cover
+          "
         />
 
-        {/* OVERLAY */}
+        {/* DARK OVERLAY */}
 
-        <div className="absolute inset-0 bg-black/35"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
 
-        {/* LEFT BUTTON */}
+        {/* PREV */}
 
         <button
           onClick={prevImage}
-          className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-black/50 backdrop-blur-xl text-white text-2xl flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+          className="
+            absolute left-4 sm:left-6 top-1/2 -translate-y-1/2
+            w-12 h-12 sm:w-14 sm:h-14
+            rounded-full
+            border border-white/10
+            bg-black/40
+            backdrop-blur-xl
+            text-white
+            text-xl
+            flex items-center justify-center
+            hover:bg-white hover:text-black
+            transition duration-300
+          "
         >
           ←
         </button>
 
-        {/* RIGHT BUTTON */}
+        {/* NEXT */}
 
         <button
           onClick={nextImage}
-          className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-black/50 backdrop-blur-xl text-white text-2xl flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+          className="
+            absolute right-4 sm:right-6 top-1/2 -translate-y-1/2
+            w-12 h-12 sm:w-14 sm:h-14
+            rounded-full
+            border border-white/10
+            bg-black/40
+            backdrop-blur-xl
+            text-white
+            text-xl
+            flex items-center justify-center
+            hover:bg-white hover:text-black
+            transition duration-300
+          "
         >
           →
         </button>
 
-        {/* IMAGE COUNT */}
+        {/* COUNTER */}
 
-        <div className="absolute bottom-6 right-6 bg-black/60 backdrop-blur-xl px-4 py-2 text-sm text-zinc-300">
+        <div
+          className="
+            absolute bottom-5 right-5
+            px-4 py-2
+            rounded-full
+            bg-black/50
+            backdrop-blur-xl
+            border border-white/10
+            text-sm text-zinc-300
+          "
+        >
           {currentImage + 1} / {selectedProject.images.length}
         </div>
 
@@ -279,15 +353,66 @@ function Projects() {
 
       {/* CONTENT */}
 
-      <div className="p-10 md:p-14">
+      <div
+        className="
+          p-6 sm:p-8 md:p-12
+          bg-gradient-to-b from-[#0b0b0b] to-black
+        "
+      >
 
-        <h3 className="text-4xl md:text-5xl font-black tracking-tight mb-6">
+        {/* TITLE */}
+
+        <h3
+          className="
+            text-3xl
+            sm:text-4xl
+            md:text-5xl
+            font-black
+            tracking-tight
+            mb-5
+          "
+        >
           {selectedProject.title}
         </h3>
 
-        <p className="text-zinc-400 text-lg leading-9 max-w-4xl mb-10">
+        {/* DESCRIPTION */}
+
+        <p
+          className="
+            text-zinc-400
+            text-base sm:text-lg
+            leading-8
+            max-w-3xl
+            mb-8
+          "
+        >
           {selectedProject.description}
         </p>
+
+        {/* TECH STACK */}
+
+        <div className="flex flex-wrap gap-3 mb-10">
+
+          {selectedProject.tech.map((item, i) => (
+
+            <span
+              key={i}
+              className="
+                px-4 py-2
+                rounded-full
+                border border-zinc-700
+                bg-zinc-900
+                text-sm text-zinc-300
+              "
+            >
+              {item}
+            </span>
+
+          ))}
+
+        </div>
+
+        {/* BUTTONS */}
 
         <div className="flex flex-wrap gap-5">
 
@@ -295,7 +420,16 @@ function Projects() {
             href={selectedProject.github}
             target="_blank"
             rel="noreferrer"
-            className="mt-6 inline-flex translate-x-4 px-8 py-4 border border-zinc-700 text-white hover:bg-white hover:text-black hover:border-white transition duration-300"
+            className="
+              inline-flex items-center justify-center
+              px-8 py-4
+              rounded-2xl
+              border border-zinc-700
+              bg-black text-white
+              font-medium
+              hover:bg-black hover:text-white hover:border-white
+              transition duration-300
+            "
           >
             Source Code
           </a>
@@ -309,6 +443,12 @@ function Projects() {
   </div>
 
 )}
+
+
+
+
+
+
     </>
   );
 }
