@@ -66,6 +66,12 @@ function Footer() {
             >
               Hamzaabusall4@gmail.com
             </a>
+            <a
+              href="tel: +962777824049"
+              className="block text-zinc-400 hover:text-white transition duration-300 mb-2"
+            >
+              phone : +962777824049
+            </a>
 
             <p className="text-zinc-600 text-sm">
               © 2026 All rights reserved.
