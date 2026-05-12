@@ -302,7 +302,7 @@ function Contact() {
 
           {/* RIGHT FORM */}
 
-          <div className="bg-zinc-950/40 backdrop-blur-xl p-10">
+          <div className="bg-zinc-950/40 p-10">
 
             <form
               onSubmit={handleSubmit}
