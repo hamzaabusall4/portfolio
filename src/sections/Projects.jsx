@@ -427,7 +427,7 @@ function Projects() {
               border border-zinc-700
               bg-black text-white
               font-medium
-              hover:bg-black hover:text-white hover:border-white
+              hover:bg-white hover:text-black hover:border-white
               transition duration-300
             "
           >
