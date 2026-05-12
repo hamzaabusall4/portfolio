@@ -1,3 +1,11 @@
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaEnvelope 
+} from "react-icons/fa";
+
+
 function Footer() {
   return (
 
@@ -55,6 +63,46 @@ function Footer() {
             </a>
 
           </div>
+
+            <div className="flex gap-4">
+          
+                          <a
+                            href="https://github.com/hamzaabusall4"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
+                          >
+                            <FaGithub size={20} />
+                          </a>
+          
+                          <a
+                            href="https://www.linkedin.com/in/hamza-abu-sall-aab114235"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
+                          >
+                            <FaLinkedin size={20} />
+                          </a>
+          
+                          <a
+                            href="https://www.instagram.com/hamza.abusall3"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
+                          >
+                            <FaInstagram size={20} />
+                          </a>
+          
+                           <a
+                            href="mailto:Hamzaabusall4@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
+                          >
+                            <FaEnvelope  size={20} />
+                          </a>
+          
+                        </div>
 
           {/* RIGHT */}
 
