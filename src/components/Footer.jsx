@@ -11,7 +11,7 @@ function Footer() {
 
   return (
 
-    <footer className="border-t border-zinc-800 bg-black/60 backdrop-blur-xl py-14">
+    <footer className="border-t border-zinc-800  bg-black/60 backdrop-blur-xl py-14">
 
       <div className="container">
 
@@ -54,14 +54,14 @@ function Footer() {
           </div>
 
 
-          <p className="text-zinc-500 leading-7 text-[19px] max-w-md gap-7">
+          <p className="text-zinc-500 leading-7 text-[19px] max-w-md gap-4">
              full-Stack Developer building modern,
              responsive and user-focused web experiences.
             </p>
 
           {/* NAV LINKS */}
 
-          <div className="flex items-center gap-8 text-sm uppercase tracking-[2px]">
+          <div className="flex items-center gap-5 text-sm uppercase tracking-[1px]">
 
             <a
               href="#home"
