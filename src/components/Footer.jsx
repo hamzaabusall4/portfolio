@@ -2,7 +2,8 @@ import {
   FaGithub,
   FaLinkedin,
   FaInstagram,
-  FaEnvelope
+  FaEnvelope,
+  FaPhone
 } from "react-icons/fa";
 
 import profil from "../assets/profil.png";
@@ -171,6 +172,26 @@ function Footer() {
             >
               <FaEnvelope size={18} />
             </a>
+
+            <a
+                      href="tel:+962777824049"
+                      className="
+                       w-12 h-12
+                rounded-2xl
+                border border-zinc-800
+                flex items-center justify-center
+                text-zinc-400
+                hover:bg-white
+                hover:text-black
+                hover:border-white
+                transition duration-300
+              "
+                    >
+                      <FaPhone
+                        size={18}
+                        className="group-hover:scale-110 transition duration-300"
+                      />
+                    </a>
 
           </div>
 

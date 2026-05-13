@@ -2,7 +2,9 @@ import {
   FaGithub,
   FaLinkedin,
   FaInstagram,
-  FaEnvelope 
+  FaEnvelope ,
+  FaPhone
+  
 } from "react-icons/fa";
 
 function Contact() {
@@ -111,7 +113,7 @@ function Contact() {
           text-zinc-500
           text-[20px]
           uppercase
-          tracking-[4px]
+          tracking-[9px]
         "
       >
         Email
@@ -142,7 +144,7 @@ function Contact() {
            text-zinc-500
           text-[20px]
           uppercase
-          tracking-[4px]
+          tracking-[9px]
         "
       >
         Location
@@ -163,20 +165,20 @@ function Contact() {
 
     {/* SOCIALS */}
 
-    <div className="flex flex-col items-center gap-3 w-full">
+    <div className="flex flex-col items-center gap-2 w-full">
 
       <span
         className="
            text-zinc-500
           text-[20px]
           uppercase
-          tracking-[4px]
+          tracking-[9px]
         "
       >
         Socials
       </span>
 
-      <div className="flex flex-full gap-4">
+      <div className="flex flex-full gap-2">
 
         <a
           href="https://github.com/hamzaabusall4"
@@ -254,7 +256,7 @@ function Contact() {
         </a>
 
         <a
-          href="mailto:Hamzaabusall4@gmail.com"
+          href="tel:+962777824049"
           className="
             group
             w-16 h-16
@@ -275,6 +277,30 @@ function Contact() {
             className="group-hover:scale-110 transition duration-300"
           />
         </a>
+
+<a
+          href="tel:+962777824049"
+          className="
+            group
+            w-16 h-16
+            rounded-2xl
+            border border-zinc-800
+            bg-black/20
+            backdrop-blur-xl
+            flex items-center justify-center
+            text-zinc-400
+            hover:bg-white
+            hover:text-black
+            hover:border-white
+            transition-all duration-300
+          "
+        >
+          <FaPhone
+            size={22}
+            className="group-hover:scale-110 transition duration-300"
+          />
+        </a>
+        
 
       </div>
 
