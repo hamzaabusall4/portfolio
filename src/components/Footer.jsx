@@ -15,7 +15,8 @@ function Footer() {
 
       <div className="container">
 
-        <div className="flex flex-col items-center gap-7">
+        <div className="flex flex-col items-center gap-4">
+          
 
           {/* TOP */}
 
