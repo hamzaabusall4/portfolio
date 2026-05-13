@@ -1,130 +1,138 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import profil from "../assets/profil.png"; // حط صورتك هون
+import profil from "../assets/profil.png";
 
 function Navbar() {
 
   const [open, setOpen] = useState(false);
 
   return (
+    <>
+    
+      <nav className="fixed top-0 left-0 w-full z-50 border-b border-zinc-800 bg-black/60 backdrop-blur-2xl">
 
-    <nav className="fixed top-0 left-0 w-full z-50 border-b border-zinc-800 bg-black/60 backdrop-blur-2xl">
+        <div className="container h-[80px] flex items-center justify-between">
 
-      <div className="container h-[80px] flex items-center justify-between">
+          {/* LEFT SIDE */}
 
-        {/* LEFT SIDE */}
+          <div className="flex items-center gap-4">
 
-        <div className="flex items-center gap-4">
+            <img
+              src={profil}
+              alt="Hamza"
+              className="
+                w-13 h-13
+                rounded-full
+                object-cover
+                border border-zinc-700
+              "
+            />
 
-          {/* PROFILE IMAGE */}
+            <h1 className="text-2xl font-bold tracking-tight text-white">
+              Hamza Abusal
+            </h1>
 
-          <img
-            src={profil}
-            alt="Hamza"
-            className="
-              w-13 h-13
-              rounded-full
-              object-cover
-              border border-zinc-700
-            "
-          />
-          
+          </div>
 
-          {/* NAME */}
+          {/* DESKTOP MENU */}
 
-          <h1 className="text-2xl font-bold tracking-tight text-white">
-            Hamza Abusal
-          </h1>
+          <ul className="hidden md:flex items-center gap-10 text-sm text-zinc-400">
+
+            <a href="#home">
+              <li className="hover:text-white transition duration-300">
+                Home
+              </li>
+            </a>
+
+            <a href="#about">
+              <li className="hover:text-white transition duration-300">
+                About
+              </li>
+            </a>
+
+            <a href="#skills">
+              <li className="hover:text-white transition duration-300">
+                Skills
+              </li>
+            </a>
+
+            <a href="#projects">
+              <li className="hover:text-white transition duration-300">
+                Projects
+              </li>
+            </a>
+
+            <a href="#contact">
+              <li className="hover:text-white transition duration-300">
+                Contact
+              </li>
+            </a>
+
+          </ul>
+
+          {/* RIGHT SIDE */}
+
+          <div className="flex items-center gap-3">
+
+            {/* RESUME BUTTON */}
+
+            <a
+              href="Hamza-Abusall-CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="
+                min-w-[120px]
+                h-[32px]
+                flex items-center justify-center
+                rounded-full
+                border border-zinc-700
+                bg-white/[0.13]
+                backdrop-blur-2xl
+                text-white
+                text-sm
+                hover:bg-white
+                hover:text-black
+                hover:border-white
+                transition-all duration-300
+              "
+            >
+              My Resume
+            </a>
+
+            {/* MOBILE MENU BUTTON */}
+
+            <button
+              onClick={() => setOpen(!open)}
+              className="
+                md:hidden
+                w-11 h-11
+                rounded-xl
+                border border-zinc-700
+                bg-white/[0.03]
+                backdrop-blur-xl
+                flex items-center justify-center
+                text-white
+                relative z-[60]
+              "
+            >
+              {open ? <X size={24} /> : <Menu size={24} />}
+            </button>
+
+          </div>
 
         </div>
 
-        {/* DESKTOP MENU */}
+      </nav>
 
-        <ul className="hidden md:flex items-center gap-10 text-sm text-zinc-400">
+      {/* OVERLAY */}
 
-          <a href="#home">
-            <li className="hover:text-white transition duration-300">
-              Home
-            </li>
-          </a>
-
-          <a href="#about">
-            <li className="hover:text-white transition duration-300">
-              About
-            </li>
-          </a>
-
-          <a href="#skills">
-            <li className="hover:text-white transition duration-300">
-              Skills
-            </li>
-          </a>
-
-          <a href="#projects">
-            <li className="hover:text-white transition duration-300">
-              Projects
-            </li>
-          </a>
-
-          <a href="#contact">
-            <li className="hover:text-white transition duration-300">
-              Contact
-            </li>
-          </a>
-
-        </ul>
-
-        {/* RIGHT SIDE */}
-
-        <div className="flex items-center gap-3">
-
-          {/* RESUME BUTTON */}
-
-          <a
-            href="Hamza-Abusall-CV.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="
-                    min-w-[120px]
-                    h-[32px]
-                    flex items-center justify-center
-                    rounded-full
-                    border border-zinc-700
-                    bg-white/[0.13]
-                    backdrop-blur-2xl
-                    text-white
-                    text-sm
-                    hover:bg-white
-                    hover:text-black
-                    hover:border-white
-                    transition-all duration-300
-                  "
-          >
-            My Resume
-          </a>
-
-          {/* MOBILE MENU BUTTON */}
-
-          <button
-            onClick={() => setOpen(!open)}
-            className="
-              md:hidden
-              w-11 h-11
-              rounded-xl
-              border border-zinc-700
-              bg-white/[0.03]
-              backdrop-blur-xl
-              flex items-center justify-center
-              text-white
-            "
-          >
-            {open ? <X size={24} /> : <Menu size={24} />}
-          </button>
-
-        </div>
-
-      </div>
+      {open && (
+        <div
+          className="fixed inset-0 z-40"
+          onClick={() => setOpen(false)}
+        />
+      )}
 
       {/* MOBILE MENU */}
 
@@ -133,12 +141,15 @@ function Navbar() {
         <div
           className="
             md:hidden
+            fixed
+            top-[80px]
+            left-0
+            w-full
+            z-50
             border-t border-zinc-800
-            bg-black/1 backdrop-blur-2xl
+            bg-black/49
             backdrop-blur-2xl
-            
           "
-          
         >
 
           <div className="container py-8 flex flex-col gap-8 text-zinc-300">
@@ -189,8 +200,7 @@ function Navbar() {
 
       )}
 
-    </nav>
-
+    </>
   );
 }
 
