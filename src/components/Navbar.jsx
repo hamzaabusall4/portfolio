@@ -76,7 +76,7 @@ function Navbar() {
 
         {/* RIGHT SIDE */}
 
-        <div className="flex items-center gap-9">
+        <div className="flex items-center gap-3">
 
           {/* RESUME BUTTON */}
 
@@ -85,18 +85,20 @@ function Navbar() {
             target="_blank"
             rel="noreferrer"
             className="
-              px-5 py-2.5
-              rounded-full
-              border border-zinc-700
-              bg-white/[0.13]
-              backdrop-blur-xl
-              text-white
-              text-sm
-              hover:bg-white
-              hover:text-black
-              hover:border-white
-              transition-all duration-300
-            "
+                    min-w-[110px]
+                    h-[32px]
+                    flex items-center justify-center
+                    rounded-full
+                    border border-zinc-700
+                    bg-white/[0.13]
+                    backdrop-blur-2xl
+                    text-white
+                    text-sm
+                    hover:bg-white
+                    hover:text-black
+                    hover:border-white
+                    transition-all duration-300
+                  "
           >
             My Resume
           </a>

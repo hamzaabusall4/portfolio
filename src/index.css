@@ -29,11 +29,11 @@ html{
 body{
   background:
     radial-gradient(circle at top left,
-      rgba(40, 17, 124, 0.322),
+     hsla(214, 83%, 21%, 0.911),
       transparent 30%),
 
     radial-gradient(circle at bottom right,
-       rgba(40, 17, 124, 0.897),
+       hsla(214, 83%, 21%, 0.911),
       transparent 30%),
 
     var(--bg);
