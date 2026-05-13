@@ -54,7 +54,7 @@ function Contact() {
           </h2>
 
           <p className="text-zinc-400 text-lg leading-9 max-w-2xl">
-            Have a project in mind or looking for a frontend developer?
+            Have a project in mind or looking for a Full-Stack developer?
             Feel free to contact me anytime.
           </p>
 
@@ -104,21 +104,14 @@ function Contact() {
 
     {/* EMAIL */}
 
-    <div
-      className="
-        flex flex-col
-        gap-3
-        pb-10
-        border-b border-zinc-200
-      "
-    >
+   <div className="flex flex-col items-center gap-3 w-full">
 
       <span
         className="
           text-zinc-500
           text-[20px]
           uppercase
-          tracking-[9px]
+          tracking-[4px]
         "
       >
         Email
@@ -127,7 +120,7 @@ function Contact() {
       <a
         href="mailto:Hamzaabusall4@gmail.com"
         className="
-          text-2xl sm:text-3xl
+          text-lg sm:text-xl
           font-bold
           text-white
           tracking-tight
@@ -142,21 +135,14 @@ function Contact() {
 
     {/* LOCATION */}
 
-    <div
-      className="
-        flex flex-col
-        gap-3
-        pb-10
-        border-b border-zinc-200
-      "
-    >
+    <div className="flex flex-col items-center gap-3 w-full">
 
       <span
         className="
            text-zinc-500
           text-[20px]
           uppercase
-          tracking-[9px]
+          tracking-[4px]
         "
       >
         Location
@@ -164,7 +150,7 @@ function Contact() {
 
       <h3
         className="
-          text-2xl sm:text-3xl
+          text-lg sm:text-xl
           font-bold
           text-white
           tracking-tight
@@ -177,14 +163,14 @@ function Contact() {
 
     {/* SOCIALS */}
 
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col items-center gap-3 w-full">
 
       <span
         className="
            text-zinc-500
           text-[20px]
           uppercase
-          tracking-[9px]
+          tracking-[4px]
         "
       >
         Socials
