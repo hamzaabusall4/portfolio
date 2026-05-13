@@ -67,7 +67,7 @@ function Contact() {
 
           {/* LEFT CARD */}
 
-          <div className="w-full border border-zinc-800 rounded-2xl bg-zinc-950 p-4 sm:p-6">
+          <div className="w-full border border-zinc-950 rounded-2xl bg-zinc-950 p-4 sm:p-6">
 
             <div
               className="

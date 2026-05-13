@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import profil from "../assets/profil.png";
+import profil from "../assets/profil.webp";
 
 function Navbar() {
 

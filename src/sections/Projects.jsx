@@ -1,31 +1,26 @@
 import { useState } from "react";
 
-import app from "../assets/app.png";
-import choice from "../assets/choice.png";
-import start from "../assets/start.png";
-import login from "../assets/login.png";
-import home from "../assets/home.png";
-import profile from "../assets/profile.png";
+import app from "../assets/app.webp";
+import choice from "../assets/choice.webp";
+import start from "../assets/start.webp";
+import login from "../assets/login.webp";
+import home from "../assets/home.webp";
+import profile from "../assets/profile.webp";
 
+import home2 from "../assets/home2.webp";
+import school from "../assets/school.webp";
+import school2 from "../assets/school2.webp";
+import school3 from "../assets/school3.webp";
+import school4 from "../assets/school4.webp";
 
+import pro1 from "../assets/pro1.webp";
+import pro2 from "../assets/pro2.webp";
+import pro3 from "../assets/pro3.webp";
+import pro4 from "../assets/pro4.webp";
 
-import home2 from "../assets/home2.png";
-import school from "../assets/school.png";
-import school2 from "../assets/school2.png";
-import school3 from "../assets/school3.png";
-import school4 from "../assets/school4.png";
-
-
-import pro1 from "../assets/pro1.PNG";
-import pro2 from "../assets/pro2.PNG";
-import pro3 from "../assets/pro3.PNG";
-import pro4 from "../assets/pro4.PNG";
-
-
-import wwww from "../assets/wwww.PNG";
-import wwswsws from "../assets/wwswsws.PNG";
-import sxsxs from "../assets/sxsxs.PNG";
-
+import wwww from "../assets/wwww.webp";
+import wwswsws from "../assets/wwswsws.webp";
+import sxsxs from "../assets/sxsxs.webp";
 
 
 

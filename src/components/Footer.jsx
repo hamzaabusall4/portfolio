@@ -6,7 +6,7 @@ import {
   FaPhone
 } from "react-icons/fa";
 
-import profil from "../assets/profil.png";
+import profil from "../assets/profil.webp";
 
 function Footer() {
 
