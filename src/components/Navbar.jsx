@@ -29,6 +29,7 @@ function Navbar() {
               border border-zinc-700
             "
           />
+          
 
           {/* NAME */}
 
@@ -85,7 +86,7 @@ function Navbar() {
             target="_blank"
             rel="noreferrer"
             className="
-                    min-w-[110px]
+                    min-w-[120px]
                     h-[32px]
                     flex items-center justify-center
                     rounded-full
@@ -133,12 +134,14 @@ function Navbar() {
           className="
             md:hidden
             border-t border-zinc-800
-            bg-black/95
+            bg-black/1 backdrop-blur-2xl
             backdrop-blur-2xl
+            
           "
+          
         >
 
-          <div className="container py-8 flex flex-col gap-7 text-zinc-300">
+          <div className="container py-8 flex flex-col gap-8 text-zinc-300">
 
             <a
               href="#home"
