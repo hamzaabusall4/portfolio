@@ -29,11 +29,11 @@ html{
 body{
   background:
     radial-gradient(circle at top left,
-      rgba(16, 32, 173, 0.582),
+      rgba(40, 17, 124, 0.322),
       transparent 30%),
 
     radial-gradient(circle at bottom right,
-      rgba(14, 25, 173, 0.418),
+       rgba(40, 17, 124, 0.897),
       transparent 30%),
 
     var(--bg);
@@ -123,7 +123,7 @@ textarea{
 }
 
 ::-webkit-scrollbar-track{
-  background:#111114;
+  background:#1f1f25;
 }
 
 ::-webkit-scrollbar-thumb{

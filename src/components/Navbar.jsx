@@ -76,7 +76,7 @@ function Navbar() {
 
         {/* RIGHT SIDE */}
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-9">
 
           {/* RESUME BUTTON */}
 
@@ -88,7 +88,7 @@ function Navbar() {
               px-5 py-2.5
               rounded-full
               border border-zinc-700
-              bg-white/[0.03]
+              bg-white/[0.13]
               backdrop-blur-xl
               text-white
               text-sm

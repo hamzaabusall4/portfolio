@@ -2,55 +2,66 @@ import {
   FaGithub,
   FaLinkedin,
   FaInstagram,
-  FaEnvelope 
+  FaEnvelope
 } from "react-icons/fa";
 
-import profil from "../assets/profil.png"; // حط صورتك هون
+import profil from "../assets/profil.png";
 
 function Footer() {
+
   return (
 
-    <footer className="border-t border-b border-zinc-800 bg-black/66 py-14 ">
-{/* fixed top-0 left-0 w-full z-50 border-b border-zinc-800 bg-black/70 backdrop-blur-xl */}
+    <footer className="border-t border-zinc-800 bg-black/60 backdrop-blur-xl py-14">
+
       <div className="container">
 
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div className="flex flex-col items-center gap-12">
 
-          {/* LEFT */}
+          {/* TOP */}
 
-          <div className="text-center lg:text-left gap-4" >
+          <div className="flex items-center gap-2">
 
+            {/* PROFILE IMAGE */}
 
-{/* PROFILE IMAGE */}
+            <img
+              src={profil}
+              alt="Hamza"
+              className="
+                w-16 h-16
+                rounded-full
+                object-cover
+                border border-zinc-700
+              "
+            />
 
-          <img
-            src={profil}
-            alt="Hamza"
-            className="
-              w-13 h-13
-              rounded-full
-              object-cover
-              border border-zinc-700
-            "
-          />
+            {/* NAME */}
 
+            <div>
 
+              <h2 className="text-5xl font-bold tracking-tight text-white">
+                Hamza Abusal
+              </h2>
 
-            <h2 className="text-4xl font-black tracking-tight mb-3 gap-7">
-              Hamza Abusal
-            </h2>
-            
+              <p className="text-zinc-500 mt-2 text-[19px]">
+                full-Stack Developer
+              </p>
 
-            <p className="text-zinc-500 leading-7 text-[18px] max-w-md gap-7">
-              Frontend Developer building modern,
-              responsive and user-focused web experiences.
-            </p>
+             
+
+            </div>
+
 
           </div>
 
-          {/* CENTER */}
 
-          <div className="flex items-center gap-8 text-sm uppercase tracking-[1px]">
+          <p className="text-zinc-500 leading-7 text-[19px] max-w-md gap-7">
+             full-Stack Developer building modern,
+             responsive and user-focused web experiences.
+            </p>
+
+          {/* NAV LINKS */}
+
+          <div className="flex items-center gap-8 text-sm uppercase tracking-[2px]">
 
             <a
               href="#home"
@@ -82,49 +93,89 @@ function Footer() {
 
           </div>
 
-            <div className="flex gap-8">
-          
-                          <a
-                            href="https://github.com/hamzaabusall4"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
-                          >
-                            <FaGithub size={20} />
-                          </a>
-          
-                          <a
-                            href="https://www.linkedin.com/in/hamza-abu-sall-aab114235"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
-                          >
-                            <FaLinkedin size={20} />
-                          </a>
-          
-                          <a
-                            href="https://www.instagram.com/hamza.abusall3"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
-                          >
-                            <FaInstagram size={20} />
-                          </a>
-          
-                           <a
-                            href="mailto:Hamzaabusall4@gmail.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-14 h-14 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition duration-300"
-                          >
-                            <FaEnvelope  size={20} />
-                          </a>
-          
-                        </div>
+          {/* SOCIAL ICONS */}
 
-          {/* RIGHT */}
+          <div className="flex gap-5">
 
-          <div className="text-center lg:text-right">
+            <a
+              href="https://github.com/hamzaabusall4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                w-12 h-12
+                rounded-2xl
+                border border-zinc-800
+                flex items-center justify-center
+                text-zinc-400
+                hover:bg-white
+                hover:text-black
+                hover:border-white
+                transition duration-300
+              "
+            >
+              <FaGithub size={18} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/hamza-abu-sall-aab114235"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                w-12 h-12
+                rounded-2xl
+                border border-zinc-800
+                flex items-center justify-center
+                text-zinc-400
+                hover:bg-white
+                hover:text-black
+                hover:border-white
+                transition duration-300
+              "
+            >
+              <FaLinkedin size={18} />
+            </a>
+
+            <a
+              href="https://www.instagram.com/hamza.abusall3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                w-12 h-12
+                rounded-2xl
+                border border-zinc-800
+                flex items-center justify-center
+                text-zinc-400
+                hover:bg-white
+                hover:text-black
+                hover:border-white
+                transition duration-300
+              "
+            >
+              <FaInstagram size={18} />
+            </a>
+
+            <a
+              href="mailto:Hamzaabusall4@gmail.com"
+              className="
+                w-12 h-12
+                rounded-2xl
+                border border-zinc-800
+                flex items-center justify-center
+                text-zinc-400
+                hover:bg-white
+                hover:text-black
+                hover:border-white
+                transition duration-300
+              "
+            >
+              <FaEnvelope size={18} />
+            </a>
+
+          </div>
+
+          {/* CONTACT INFO */}
+
+          <div className="text-center">
 
             <a
               href="mailto:Hamzaabusall4@gmail.com"
@@ -132,11 +183,12 @@ function Footer() {
             >
               Hamzaabusall4@gmail.com
             </a>
+
             <a
-              href="tel: +962777824049"
-              className="block text-zinc-400 hover:text-white transition duration-300 mb-2"
+              href="tel:+962777824049"
+              className="block text-zinc-400 hover:text-white transition duration-300 mb-4"
             >
-              phone : +962777824049
+              +962777824049
             </a>
 
             <p className="text-zinc-600 text-sm">
@@ -150,7 +202,10 @@ function Footer() {
       </div>
 
     </footer>
+
   );
 }
 
 export default Footer;
+
+            
