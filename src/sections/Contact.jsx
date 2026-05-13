@@ -168,7 +168,7 @@ function Contact() {
                     Socials
                   </span>
 
-                  <div className="flex flex-wrap justify-center gap-4 w-full">
+                  <div className="flex flex-wrap justify-center gap-3 w-full">
 
                     <a
                       href="https://github.com/hamzaabusall4"
