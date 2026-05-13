@@ -38,11 +38,11 @@ function Footer() {
 
             <div>
 
-              <h2 className="text-5xl font-bold tracking-tight text-white">
+              <h2 className="text- font-bold tracking-tight text-white">
                 Hamza Abusal
               </h2>
 
-              <p className="text-zinc-500 mt-2 text-[19px]">
+              <p className="text-zinc-500 mt-2 text-[15px]">
                 full-Stack Developer
               </p>
 
