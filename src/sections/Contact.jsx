@@ -66,7 +66,7 @@ function Contact() {
 
           {/* LEFT CARD */}
 
-          <div className="border border-zinc-800 bg-zinc-950 p-8 space-y-12">
+          <div className="border border-zinc-800 rounded-xl bg-zinc-950 p-8 space-y-12">
 
             {/* EMAIL */}
 
@@ -79,6 +79,7 @@ function Contact() {
     mt-11
     relative
     overflow-hidden
+    rounded-xl
     rounded-[0px]
     border border-zinc-800
     bg-zinc-950/60
@@ -115,7 +116,7 @@ function Contact() {
       <span
         className="
           text-zinc-500
-          text-[30px]
+          text-[20px]
           uppercase
           tracking-[9px]
         "
@@ -153,7 +154,7 @@ function Contact() {
       <span
         className="
            text-zinc-500
-          text-[30px]
+          text-[20px]
           uppercase
           tracking-[9px]
         "
@@ -176,12 +177,12 @@ function Contact() {
 
     {/* SOCIALS */}
 
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-3">
 
       <span
         className="
            text-zinc-500
-          text-[30px]
+          text-[20px]
           uppercase
           tracking-[9px]
         "
@@ -189,7 +190,7 @@ function Contact() {
         Socials
       </span>
 
-      <div className="flex flex-wrap gap-6">
+      <div className="flex flex-full gap-4">
 
         <a
           href="https://github.com/hamzaabusall4"
@@ -302,93 +303,139 @@ function Contact() {
 
           {/* RIGHT FORM */}
 
-          <div className="bg-zinc-950/40 p-10">
+         <div className="bg-zinc-950/60 border border-zinc-800 rounded-xl p-8 md:p-10 backdrop-blur-xl">
 
-            <form
-              onSubmit={handleSubmit}
-              className="space-y-8"
-            >
+  <form
+    onSubmit={handleSubmit}
+    className="space-y-6"
+  >
 
-              {/* HIDDEN INPUTS */}
+    {/* HIDDEN INPUTS */}
 
-              <input
-                type="hidden"
-                name="_subject"
-                value="New Portfolio Message"
-              />
+    <input
+      type="hidden"
+      name="_subject"
+      value="New Portfolio Message"
+    />
 
-              <input
-                type="hidden"
-                name="_captcha"
-                value="false"
-              />
+    <input
+      type="hidden"
+      name="_captcha"
+      value="false"
+    />
 
-              {/* NAME */}
+    {/* NAME */}
 
-              <div>
+    <div>
 
-                <label className="block text-zinc-500 text-xs uppercase tracking-[4px] mb-4">
-                  Full Name
-                </label>
+      <label className="block text-zinc-400 text-sm mb-3">
+          Full Name
+      </label>
 
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                  className="w-full h-[65px] bg-zinc-900/60 px-6 text-white placeholder:text-zinc-600 outline-none focus:bg-zinc-900 transition duration-300"
-                />
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        className="
+          w-full
+          h-[48px]
+          rounded-xl
+          bg-zinc-900
+          border border-zinc-800
+          px-5
+          text-white
+          placeholder:text-zinc-500
+          outline-none
+          focus:border-zinc-600
+          transition duration-300
+        "
+      />
 
-              </div>
+    </div>
 
-              {/* EMAIL */}
+    {/* EMAIL */}
 
-              <div>
+    <div>
 
-                <label className="block text-zinc-500 text-xs uppercase tracking-[4px] mb-4">
-                  Email Address
-                </label>
+      <label className="block text-zinc-400 text-sm mb-3">
+        Email Address
+      </label>
 
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="abc@example.com"
-                  required
-                  className="w-full h-[65px] bg-zinc-900/60 px-6 text-white placeholder:text-zinc-600 outline-none focus:bg-zinc-900 transition duration-300"
-                />
+      <input
+        type="email"
+        name="email"
+        placeholder="abc@example.com"
+        required
+        className="
+          w-full
+          h-[48px]
+          rounded-xl
+          bg-zinc-900
+          border border-zinc-800
+          px-5
+          text-white
+          placeholder:text-zinc-500
+          outline-none
+          focus:border-zinc-600
+          transition duration-300
+        "
+      />
 
-              </div>
+    </div>
 
-              {/* MESSAGE */}
+    {/* MESSAGE */}
 
-              <div>
+    <div>
 
-                <label className="block text-zinc-500 text-xs uppercase tracking-[4px] mb-4">
-                  Message
-                </label>
+      <label className="block text-zinc-400 text-sm mb-3">
+        Message
+      </label>
 
-                <textarea
-                  rows="7"
-                  name="message"
-                  placeholder="Tell me about your project..."
-                  required
-                  className="w-full bg-zinc-900/60 px-6 py-5 text-white placeholder:text-zinc-600 outline-none focus:bg-zinc-900 transition duration-300 resize-none"
-                ></textarea>
+      <textarea
+        rows="6"
+        name="message"
+        placeholder="Tell me about your project..."
+        required
+        className="
+          w-full
+          rounded-xl
+          bg-zinc-900
+          border border-zinc-800
+          px-5
+          py-4
+          text-white
+          placeholder:text-zinc-500
+          outline-none
+          focus:border-zinc-600
+          transition duration-300
+          resize-none
+        "
+      ></textarea>
 
-              </div>
+    </div>
 
-              {/* BUTTON */}
+    {/* BUTTON */}
 
-              <button
-                type="submit"
-                className="bg-white text-black px-8 py-4 font-semibold hover:bg-zinc-200 transition duration-300"
-              >
-                Send Email
-              </button>
+    <button
+      type="submit"
+      className="
+        w-full
+        h-[38px]
+        rounded-xl
+        bg-white
+        text-black
+        font-medium
+        hover:bg-zinc-200
+        transition duration-300
+      "
+    >
+      Send Message
+    </button>
 
-            </form>
+  </form>
 
-          </div>
+</div>
 
         </div>
 

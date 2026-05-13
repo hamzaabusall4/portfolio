@@ -1,4 +1,4 @@
-import profile from "../assets/WhatsApp Image 2026-05-11 at 5.27.49 PM.jpeg"
+import profile from "../assets/profil.png"
 
 function Hero() {
   return (
@@ -21,8 +21,8 @@ function Hero() {
         {/* LEFT SIDE */}
         <div>
 
-          <p className="text-zinc-400 uppercase tracking-[5px] text-sm mb-6">
-            Frontend Developer
+          <p className="text-zinc-400 uppercase tracking-[8px] text-sm mb-6">
+            Full-Stack Developer
           </p>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-8">
@@ -33,7 +33,7 @@ function Hero() {
 
           </h1>
 
-          <p className="text-zinc-400 text-xl leading-[2.8] max-w-2xl mb-12">
+          <p className="text-zinc-400 text-xl leading-[2.0] max-w-2xl mb-12">
 
             I design and develop clean, responsive and
             high-performance websites using React JS
@@ -88,7 +88,7 @@ function Hero() {
             <div className="absolute bottom-6 left-6 right-6 bg-black/20 backdrop-blur-md border border-white/10 rounded-5xl px-5 py-4">
 
               <p className="text-zinc-400 text-sm mb-1">
-                Frontend Developer
+            Full-Stack Developer
               </p>
 
               <h3 className="text-2xl font-semibold">

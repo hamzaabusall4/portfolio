@@ -157,7 +157,7 @@ function Projects() {
               <div
                 key={index}
                 onClick={() => openProject(project)}
-                className="group bg-zinc-950 border border-zinc-800 overflow-hidden cursor-pointer hover:border-zinc-500 transition duration-500 hover:-translate-y-2"
+                className="group bg-zinc-950 border rounded-xl border-zinc-800 overflow-hidden cursor-pointer hover:border-zinc-500 transition duration-500 hover:-translate-y-2"
               >
 
                 <div className="overflow-hidden">

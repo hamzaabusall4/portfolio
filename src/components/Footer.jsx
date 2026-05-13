@@ -5,6 +5,7 @@ import {
   FaEnvelope 
 } from "react-icons/fa";
 
+import profil from "../assets/profil.png"; // حط صورتك هون
 
 function Footer() {
   return (
@@ -19,11 +20,28 @@ function Footer() {
 
           <div className="text-center lg:text-left gap-4" >
 
-            <h2 className="text-5xl font-black tracking-tight mb-3 gap-7">
+
+{/* PROFILE IMAGE */}
+
+          <img
+            src={profil}
+            alt="Hamza"
+            className="
+              w-13 h-13
+              rounded-full
+              object-cover
+              border border-zinc-700
+            "
+          />
+
+
+
+            <h2 className="text-4xl font-black tracking-tight mb-3 gap-7">
               Hamza Abusal
             </h2>
+            
 
-            <p className="text-zinc-500 leading-7 text-[15px] max-w-md gap-8">
+            <p className="text-zinc-500 leading-7 text-[18px] max-w-md gap-7">
               Frontend Developer building modern,
               responsive and user-focused web experiences.
             </p>
@@ -32,7 +50,7 @@ function Footer() {
 
           {/* CENTER */}
 
-          <div className="flex items-center gap-8 text-sm uppercase tracking-[2px]">
+          <div className="flex items-center gap-8 text-sm uppercase tracking-[1px]">
 
             <a
               href="#home"
@@ -64,7 +82,7 @@ function Footer() {
 
           </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-8">
           
                           <a
                             href="https://github.com/hamzaabusall4"
