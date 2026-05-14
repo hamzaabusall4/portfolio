@@ -67,7 +67,7 @@ function Skills() {
           Skills
         </p>
 
-        <h2 className="text-4xl md:text-9xl  font-black leading-tight mb-20 ">
+        <h2 className="text-4xl md:text-4xl  font-black leading-tight mb-20 ">
           Technologies & Skills.
         </h2>
 
@@ -85,7 +85,7 @@ function Skills() {
               {/* CATEGORY TITLE */}
               
 
-              <h3 className="text-5xl md:text-20xl font-black mb-10 leading-[4.1] tracking-[5px]">
+              <h3 className="text-3xl md:text-20xl font-black mb-10 leading-[4.1] tracking-[5px]">
                 {category.title}
               </h3>
 
