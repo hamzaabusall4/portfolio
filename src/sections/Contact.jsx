@@ -28,7 +28,6 @@ function Contact() {
 
     if (res.ok) {
       alert("Message sent successfully!");
-      form.reset();
     } else {
       alert("Failed to send message!");
     }
@@ -37,8 +36,9 @@ function Contact() {
     console.log(error);
     alert("Something went wrong!");
   }
-};
 
+  form.reset();
+};
   return (
 
     <section
