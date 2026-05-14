@@ -2,8 +2,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaInstagram,
-  FaEnvelope, 
-  FaPhone
+  FaEnvelope 
 } from "react-icons/fa";
 
 function Contact() {
@@ -164,7 +163,7 @@ function Contact() {
 
     {/* SOCIALS */}
 
-    <div className="flex flex-col items-center gap-2 w-full">
+    <div className="flex flex-col items-center gap-3 w-full">
 
       <span
         className="
@@ -272,29 +271,6 @@ function Contact() {
           "
         >
           <FaEnvelope
-            size={22}
-            className="group-hover:scale-110 transition duration-300"
-          />
-        </a>
-
-<a
-          href="tel:+962777824049"
-          className="
-            group
-            w-16 h-16
-            rounded-2xl
-            border border-zinc-800
-            bg-black/20
-            backdrop-blur-xl
-            flex items-center justify-center
-            text-zinc-400
-            hover:bg-white
-            hover:text-black
-            hover:border-white
-            transition-all duration-300
-          "
-        >
-          <FaPhone
             size={22}
             className="group-hover:scale-110 transition duration-300"
           />
