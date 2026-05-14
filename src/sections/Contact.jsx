@@ -10,14 +10,13 @@ import {
 function Contact() {
 
   const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
 
-    const form = e.target;
-
-    const data = new FormData(form);
-
-    await fetch(
+  try {
+    const res = await fetch(
       "https://formsubmit.co/ajax/hamzaabusall4@gmail.com",
       {
         method: "POST",
@@ -28,10 +27,20 @@ function Contact() {
       }
     );
 
-    alert("Message sent successfully!");
+    const result = await res.json();
 
-    form.reset();
-  };
+    if (res.ok) {
+      alert("Message sent successfully!");
+      form.reset();
+    } else {
+      console.log("ERROR:", result);
+      alert("Message failed to send");
+    }
+  } catch (err) {
+    console.log("NETWORK ERROR:", err);
+    alert("Something went wrong");
+  }
+};
 
   return (
 
