@@ -67,8 +67,7 @@ function Contact() {
         {/* MAIN GRID */}
         <div className="grid lg:grid-cols-[330px_1fr] gap-10 items-start w-full px-4 sm:px-6 lg:px-0">
           {/* LEFT CARD */}
-          <div className="border border-zinc-800 rounded-xl bg-zinc-950 p-8 space-y-12">
-
+<div className="border border-zinc-800 rounded-xl bg-zinc-950 p-6 sm:p-8 space-y-12 max-w-[420px] mx-auto lg:mx-0">
             <div className="relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950/60 backdrop-blur-2xl p-8 sm:p-10 md:p-14">
 
               <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
