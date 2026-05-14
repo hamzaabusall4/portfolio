@@ -43,84 +43,75 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 border-t border-zinc-900 flex justify-center px-4"
+      className="py-24 border-t border-zinc-900 flex justify-center"
     >
-      {/* CONTAINER أصغر ومركزي */}
-      <div className="w-full max-w-4xl">
+      {/* container centered + limited width */}
+      <div className="w-full max-w-5xl px-6">
 
-        {/* HEADER */}
-        <div className="max-w-2xl mb-14 mx-auto text-center lg:text-left">
+        {/* HEADER (centered) */}
+        <div className="text-center mb-16">
           <p className="text-zinc-500 uppercase tracking-[4px] text-sm mb-4">
             Contact
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-black leading-[1.1] mb-5">
-            Let's build something great together.
+          <h2 className="text-4xl md:text-5xl font-black leading-tight mb-5">
+            Let’s build something great together
           </h2>
 
-          <p className="text-zinc-400 text-base md:text-lg leading-8">
+          <p className="text-zinc-400 max-w-2xl mx-auto leading-7">
             Have a project in mind or looking for a Full-Stack developer?
             Feel free to contact me anytime.
           </p>
         </div>
 
-        {/* GRID */}
-        <div className="grid lg:grid-cols-[280px_1fr] gap-8 items-start justify-center">
+        {/* CARD WRAPPER (CENTERED BOX) */}
+        <div className="grid md:grid-cols-2 gap-8 items-start">
 
-          {/* LEFT CARD */}
-          <div className="w-full max-w-[280px] mx-auto lg:mx-0">
-            <div className="border border-zinc-800 rounded-xl bg-zinc-950 p-5 space-y-8">
+          {/* LEFT */}
+          <div className="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 md:p-8">
+
+            <div className="flex flex-col items-center text-center gap-10">
 
               {/* EMAIL */}
-              <div className="text-center">
-                <p className="text-zinc-500 text-xs tracking-[4px] uppercase mb-2">
+              <div>
+                <p className="text-zinc-500 uppercase tracking-[6px] text-sm mb-2">
                   Email
                 </p>
                 <a
                   href="mailto:Hamzaabusall4@gmail.com"
-                  className="text-white font-semibold text-sm hover:text-zinc-300"
+                  className="text-white font-semibold hover:text-zinc-300"
                 >
                   Hamzaabusall4@gmail.com
                 </a>
               </div>
 
               {/* LOCATION */}
-              <div className="text-center">
-                <p className="text-zinc-500 text-xs tracking-[4px] uppercase mb-2">
+              <div>
+                <p className="text-zinc-500 uppercase tracking-[6px] text-sm mb-2">
                   Location
                 </p>
-                <p className="text-white font-semibold text-sm">
+                <p className="text-white font-semibold">
                   Amman / Jordan
                 </p>
               </div>
 
               {/* SOCIALS */}
-              <div className="text-center">
-                <p className="text-zinc-500 text-xs tracking-[4px] uppercase mb-3">
+              <div>
+                <p className="text-zinc-500 uppercase tracking-[6px] text-sm mb-4">
                   Socials
                 </p>
 
-                <div className="flex justify-center gap-3 flex-wrap">
+                <div className="flex gap-3 justify-center flex-wrap">
 
-                  <a className="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 hover:bg-white hover:text-black">
-                    <FaGithub size={16} />
-                  </a>
-
-                  <a className="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 hover:bg-white hover:text-black">
-                    <FaLinkedin size={16} />
-                  </a>
-
-                  <a className="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 hover:bg-white hover:text-black">
-                    <FaInstagram size={16} />
-                  </a>
-
-                  <a className="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 hover:bg-white hover:text-black">
-                    <FaEnvelope size={16} />
-                  </a>
-
-                  <a className="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 hover:bg-white hover:text-black">
-                    <FaPhone size={16} />
-                  </a>
+                  {[FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaPhone].map((Icon, i) => (
+                    <a
+                      key={i}
+                      href="#"
+                      className="w-12 h-12 flex items-center justify-center border border-zinc-800 rounded-xl text-zinc-400 hover:bg-white hover:text-black transition"
+                    >
+                      <Icon />
+                    </a>
+                  ))}
 
                 </div>
               </div>
@@ -129,48 +120,45 @@ function Contact() {
           </div>
 
           {/* RIGHT FORM */}
-          <div className="w-full max-w-[420px] mx-auto lg:mx-0">
-            <div className="bg-zinc-950/60 border border-zinc-800 rounded-xl p-5 md:p-7 backdrop-blur-xl">
+          <div className="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 md:p-8">
 
-              <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-5">
 
-                <input type="hidden" name="_subject" value="New Portfolio Message" />
-                <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New Portfolio Message" />
+              <input type="hidden" name="_captcha" value="false" />
 
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                  className="w-full h-[42px] rounded-lg bg-zinc-900 border border-zinc-800 px-4 text-white"
-                />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                className="w-full h-[44px] rounded-xl bg-zinc-900 border border-zinc-800 px-4 text-white outline-none"
+              />
 
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                  className="w-full h-[42px] rounded-lg bg-zinc-900 border border-zinc-800 px-4 text-white"
-                />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                className="w-full h-[44px] rounded-xl bg-zinc-900 border border-zinc-800 px-4 text-white outline-none"
+              />
 
-                <textarea
-                  name="message"
-                  rows="5"
-                  placeholder="Tell me about your project..."
-                  required
-                  className="w-full rounded-lg bg-zinc-900 border border-zinc-800 px-4 py-3 text-white resize-none"
-                />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+                className="w-full rounded-xl bg-zinc-900 border border-zinc-800 px-4 py-3 text-white outline-none resize-none"
+              />
 
-                <button
-                  type="submit"
-                  className="w-full h-[38px] rounded-lg bg-white text-black font-medium hover:bg-zinc-200 transition"
-                >
-                  Send Message
-                </button>
+              <button
+                type="submit"
+                className="w-full h-[44px] rounded-xl bg-white text-black font-medium hover:bg-zinc-200 transition"
+              >
+                Send Message
+              </button>
 
-              </form>
-
-            </div>
+            </form>
           </div>
 
         </div>
@@ -179,4 +167,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contact
