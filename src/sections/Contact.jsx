@@ -8,14 +8,14 @@ import {
 function Contact() {
 
   const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    e.preventDefault();
+  const form = e.target;
 
-    const form = e.target;
+  const data = new FormData(form);
 
-    const data = new FormData(form);
-
-    await fetch(
+  try {
+    const res = await fetch(
       "https://formsubmit.co/ajax/hamzaabusall4@gmail.com",
       {
         method: "POST",
@@ -26,10 +26,18 @@ function Contact() {
       }
     );
 
-    alert("Message sent successfully!");
+    if (res.ok) {
+      alert("Message sent successfully!");
+      form.reset();
+    } else {
+      alert("Failed to send message!");
+    }
 
-    form.reset();
-  };
+  } catch (error) {
+    console.log(error);
+    alert("Something went wrong!");
+  }
+};
 
   return (
 
@@ -54,7 +62,7 @@ function Contact() {
           </h2>
 
           <p className="text-zinc-400 text-lg leading-9 max-w-2xl">
-            Have a project in mind or looking for a Full-Stack developer?
+            {/* Have a project in mind or looking for a Full-Stack developer? */}
             Feel free to contact me anytime.
           </p>
 
