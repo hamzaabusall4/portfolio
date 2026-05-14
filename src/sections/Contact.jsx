@@ -306,6 +306,16 @@ function Contact() {
 
           </div>
 
+
+
+
+
+
+
+
+
+
+
           {/* RIGHT FORM */}
 
           <div className="w-full bg-zinc-950/60 border border-zinc-800 rounded-2xl p-6 md:p-10 backdrop-blur-xl">
