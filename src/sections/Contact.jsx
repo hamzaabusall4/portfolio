@@ -1,7 +1,7 @@
 import {
   FaGithub,
   FaLinkedin,
-  FaInstagram,
+  FaPhone,
   FaEnvelope 
 } from "react-icons/fa";
 
@@ -229,7 +229,7 @@ function Contact() {
         </a>
 
         <a
-          href="https://www.instagram.com/hamza.abusall3"
+          href="tel:+962777824049"
           target="_blank"
           rel="noopener noreferrer"
           className="
@@ -247,7 +247,7 @@ function Contact() {
             transition-all duration-300
           "
         >
-          <FaInstagram
+          <FaPhone
             size={22}
             className="group-hover:scale-110 transition duration-300"
           />
