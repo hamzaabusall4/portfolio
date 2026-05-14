@@ -67,7 +67,7 @@ function Skills() {
           Skills
         </p>
 
-        <h2 className="text-4xl md:text-4xl  font-black leading-tight mb-20 ">
+        <h2 className="text-4xl md:text-5xl  font-black leading-tight mb-20 ">
           Technologies & Skills.
         </h2>
 
