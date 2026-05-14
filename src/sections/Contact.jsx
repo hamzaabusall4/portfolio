@@ -65,8 +65,7 @@ function Contact() {
         </div>
 
         {/* MAIN GRID */}
-        <div className="grid lg:grid-cols-[330px_1fr] gap-10 items-start w-full">
-
+        <div className="grid lg:grid-cols-[330px_1fr] gap-10 items-start w-full px-4 sm:px-6 lg:px-0">
           {/* LEFT CARD */}
           <div className="border border-zinc-800 rounded-xl bg-zinc-950 p-8 space-y-12">
 
