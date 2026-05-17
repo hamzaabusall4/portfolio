@@ -10,29 +10,21 @@ import Contact from "./sections/Contact"
 function App() {
   return (
     <div>
+
       <Navbar />
 
-      <section id="home">
-        <Hero />
-      </section>
+      <Hero />
 
-      <section id="about">
-        <About />
-      </section>
+      <About />
 
-      <section id="skills">
-        <Skills />
-      </section>
+      <Skills />
 
-      <section id="projects">
-        <Projects />
-      </section>
+      <Projects />
 
-      <section id="contact">
-        <Contact />
-      </section>
+      <Contact />
 
       <Footer />
+
     </div>
   )
 }
