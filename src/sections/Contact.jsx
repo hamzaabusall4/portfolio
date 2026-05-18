@@ -7,38 +7,38 @@ import {
 
 function Contact() {
 
-  const handleSubmit = async (e) => {
-  e.preventDefault();
+  // const handleSubmit = async (e) => {
+  // e.preventDefault();
 
-  const form = e.target;
+  // const form = e.target;
 
-  const data = new FormData(form);
+  // const data = new FormData(form);
 
-  try {
-    const res = await fetch(
-      "https://formsubmit.co/ajax/hamzaabusall4@gmail.com",
-      {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
-        body: data,
-      }
-    );
+  // try {
+  //   const res = await fetch(
+  //     "https://formsubmit.co/ajax/hamzaabusall4@gmail.com",
+  //     {
+  //       method: "POST",
+  //       headers: {
+  //         Accept: "application/json",
+  //       },
+  //       body: data,
+  //     }
+  //   );
 
-    if (res.ok) {
-      alert("Message sent successfully!");
-    } else {
-      alert("Failed to send message!");
-    }
+  //   if (res.ok) {
+  //     alert("Message sent successfully!");
+  //   } else {
+  //     alert("Failed to send message!");
+  //   }
 
-  } catch (error) {
-    console.log(error);
-    alert("Something went wrong!");
-  }
+//   } catch (error) {
+//     console.log(error);
+//     alert("Something went wrong!");
+//   }
 
-  form.reset();
-};
+//   form.reset();
+// };
   return (
 
     <section
