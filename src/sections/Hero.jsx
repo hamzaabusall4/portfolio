@@ -22,7 +22,7 @@ function Hero() {
         <div>
 
           <p className="text-zinc-400 uppercase tracking-[8px] text-sm mb-6">
-            Full-Stack Developer
+            Front-End Developer
           </p>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-8">
@@ -88,7 +88,7 @@ function Hero() {
             <div className="absolute bottom-6 left-6 right-6 bg-black/20 backdrop-blur-md border border-white/10 rounded-5xl px-5 py-4">
 
               <p className="text-zinc-400 text-sm mb-1">
-            Full-Stack Developer
+            Front-End Developer
               </p>
 
               <h3 className="text-2xl font-semibold">

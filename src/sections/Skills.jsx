@@ -73,7 +73,7 @@ function Skills() {
 
         {/* GRID */}
 
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-13">
 
           {skillCategories.map((category, index) => (
 
@@ -83,15 +83,15 @@ function Skills() {
             >
 
               {/* CATEGORY TITLE */}
-              
+              <p className="text-zinc-500 uppercase tracking-[4px] text-sm mb-5"></p>
 
-              <h3 className="text-3xl md:text-20xl font-black mb-10 leading-[4.1] tracking-[5px]">
+              <h3 className="text-2xl md:text-20xl font-black mb-10 leading-[4.1] tracking-[5px]">
                 {category.title}
               </h3>
 
               {/* SKILLS */}
 
-              <div className="flex flex-wrap gap-5">
+              <div className="flex flex-wrap gap-3">
 
                 {category.skills.map((skill, i) => (
 

@@ -62,7 +62,7 @@ function Contact() {
           </h2>
 
           <p className="text-zinc-400 text-lg leading-9 max-w-2xl">
-            {/* Have a project in mind or looking for a Full-Stack developer? */}
+            {/* Have a project in mind or looking for a Front-End Developer? */}
             Feel free to contact me anytime.
           </p>
 
@@ -70,7 +70,7 @@ function Contact() {
 
         {/* MAIN GRID */}
 
-        <div className="grid lg:grid-cols-[330px_1fr] gap-10 items-start">
+        <div className="grid lg:grid-cols-[880px_1fr] gap-10 items-start">
 
           {/* LEFT CARD */}
 
@@ -285,26 +285,14 @@ function Contact() {
         </a>
         
 
-      </div>
-
-    </div>
-
-  </div>
-
 </div>
-
-          </div>
-          
-
-         
-
 </div>
-
-        </div>
-
-     
+</div>
+</div>
+</div>          
+</div>
+</div>     
     </section>
   );
 }
-
 export default Contact;

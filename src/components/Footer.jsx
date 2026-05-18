@@ -16,12 +16,12 @@ function Footer() {
 
       <div className="container">
 
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-8">
           
 
           {/* TOP */}
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-5">
 
             {/* PROFILE IMAGE */}
 
@@ -40,12 +40,12 @@ function Footer() {
 
             <div>
 
-              <h2 className="text- font-bold tracking-tight text-white">
+              <h2 className="text-3xl font-bold tracking-tight text-white">
                 Hamza Abusal
               </h2>
 
               <p className="text-zinc-500 mt-2 text-[15px]">
-                full-Stack Developer
+                Front-End Developer
               </p>
 
              
@@ -57,7 +57,7 @@ function Footer() {
 
 
           <p className="text-zinc-500 leading-7 text-[19px] max-w-md gap-4">
-             full-Stack Developer building modern,
+             Front-End Developer building modern,
              responsive and user-focused web experiences.
             </p>
 
