@@ -7,7 +7,6 @@ function About() {
 
       <div className="container grid lg:grid-cols-2 gap-16 items-start">
 
-        {/* LEFT */}
         <div>
 
           <p className="text-zinc-500 uppercase tracking-[4px] text-sm mb-6">
