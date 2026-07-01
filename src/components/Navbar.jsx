@@ -78,7 +78,7 @@ function Navbar() {
             {/* RESUME BUTTON */}
 
             <a
-              href="Hamza-Abusall-CV.pdf"
+              href="Hamza-Abusall-CV2.pdf"
               target="_blank"
               rel="noreferrer"
               className="

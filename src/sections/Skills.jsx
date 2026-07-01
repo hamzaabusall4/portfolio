@@ -1,13 +1,14 @@
 const skillCategories = [
 
   {
-    title: "Frontend Development",
+    title: "Front-End Development",
 
     skills: [
       "HTML5",
       "CSS3",
       "JavaScript",
       "React JS",
+      "Vue.js",
       "React Native",
      
     ],
@@ -18,9 +19,10 @@ const skillCategories = [
 
     skills: [
       "PHP", 
+      "Laravel",
       "C#",
       "ASP.NET",
-      "SQL",
+      "MySQL",
       "MongoDB",
     ],
   },
@@ -30,9 +32,8 @@ const skillCategories = [
 
     skills: [
       "Git & GitHub",
+      "DBaever",
       "PhpMyAdmin",
-      
-      "Information Technology",
     ],
   },
 
